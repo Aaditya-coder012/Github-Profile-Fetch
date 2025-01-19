@@ -7,33 +7,109 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
+    color: #333;
+}
+
+.container {
     width: 400px;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  .search-box {
+    color: #444;
+}
+
+.search-box {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-  }
-  
-  .search-box input {
+}
+
+.search-box input {
     flex: 1;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #007bff;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+#profile-container {
+    margin-top: 20px;
+    display: none;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#profile-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#profile-container p {
+    margin: 5px 0;
+}
+
+#profile-container a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#profile-container a:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
