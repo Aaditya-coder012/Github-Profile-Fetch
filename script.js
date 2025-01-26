@@ -1,3 +1,4 @@
+// script.js
 
 const searchButton = document.getElementById("search-btn");
 const usernameInput = document.getElementById("username");
@@ -59,7 +60,5 @@ searchButton.addEventListener("click", () => {
   const username = usernameInput.value.trim();
   if (username) {
     fetchGitHubProfile(username);
-  } else {
-    displayError("Please enter a username.");
   }
 });
